@@ -11,10 +11,10 @@
      http://www.springframework.org/schema/mvc  
      http://www.springframework.org/schema/mvc/spring-mvc-3.0.xsd">
     <!-- 启用spring mvc 注解 -->
-    <context:annotation-config/>
+    <mvc:annotation-driven/>
     <!-- 设置使用注解的类所在的jar包 -->
     <context:component-scan base-package="com.huawei.controller" />
-	<!-- 静态资源使用default-servlet处理，实际情况该处理器会拦截正常servlet请求，有点怪 -->
+	<!-- 静态资源使用default-servlet处理-->
 	<!-- <mvc:default-servlet-handler/> -->
 	<!-- 静态资源 配置-->
 	<mvc:resources location="/" mapping="/resources/**"/>

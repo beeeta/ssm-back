@@ -10,17 +10,15 @@
      http://www.springframework.org/schema/aop/spring-aop.xsd
      http://www.springframework.org/schema/tx 
      http://www.springframework.org/schema/tx/spring-tx.xsd">
-    <!-- 自动注入 -->
-    <context:component-scan base-package="com.huawei.service.impl" />
     <!-- 这里也需要引用使用aop注解定义的类包 -->
     <aop:aspectj-autoproxy/>
     <!-- 接着这里可以申明Aspect的Bean -->
-    
+    <context:annotation-config/>
+    <!-- 注入扫描 -->
+    <context:component-scan base-package="com.huawei.service.impl" />
     <!-- 加载properties文件  -->
     <bean id="propertyConfigurer"  
         class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer">  
         <property name="location" value="classpath:mysqldb.properties" />  
     </bean> 
-    <!-- Enables the use of the @AspectJ style of Spring AOP -->
-    <aop:aspectj-autoproxy/>
 </beans>
