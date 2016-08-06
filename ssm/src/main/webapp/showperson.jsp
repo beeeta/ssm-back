@@ -15,8 +15,8 @@
             </tr>
             <c:forEach items="${persons}" var="person">
                 <tr>
-                    <td>${person.name }</td>
-                    <td>${person.grade }</td>
+                    <td>${person.s_name }</td>
+                    <td>${person.s_classId }</td>
                 </tr>
             </c:forEach>
         </table>

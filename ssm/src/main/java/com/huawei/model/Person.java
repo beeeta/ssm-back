@@ -10,8 +10,9 @@ import java.sql.Time;
 public class Person {
 
     private int id;
-    private String name;
-    private String grade;
+    private String s_name;
+    private String s_classId;
+    private String s_age;
     private Time createTime;
     private Time updateTime;
     
@@ -21,17 +22,24 @@ public class Person {
     public void setId(int id) {
         this.id = id;
     }
-    public String getName() {
-        return name;
-    }
-    public void setName(String name) {
-        this.name = name;
-    }
-	public String getGrade() {
-		return grade;
+   
+	public String getS_name() {
+		return s_name;
 	}
-	public void setGrade(String grade) {
-		this.grade = grade;
+	public void setS_name(String s_name) {
+		this.s_name = s_name;
+	}
+	public String getS_classId() {
+		return s_classId;
+	}
+	public void setS_classId(String s_classId) {
+		this.s_classId = s_classId;
+	}
+	public String getS_age() {
+		return s_age;
+	}
+	public void setS_age(String s_age) {
+		this.s_age = s_age;
 	}
 	public Time getCreateTime() {
 		return createTime;

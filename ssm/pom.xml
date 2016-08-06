@@ -4,6 +4,7 @@
   <groupId>com.beta.allen</groupId>
   <artifactId>ssm</artifactId>
   <packaging>war</packaging>
+  
   <version>0.0.1-SNAPSHOT</version>
   <name>ssm Maven Webapp</name>
   <url>http://maven.apache.org</url>
@@ -46,12 +47,7 @@
             <artifactId>spring-webmvc</artifactId>
             <version>${spring.version}</version>
         </dependency>
-        <dependency>
-            <groupId>org.springframework</groupId>
-            <artifactId>spring-aop</artifactId>
-            <version>${spring.version}</version>
-        </dependency>
-
+		
         <dependency>
             <groupId>org.springframework</groupId>
             <artifactId>spring-context-support</artifactId>
